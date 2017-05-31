@@ -1,0 +1,68 @@
+<header class="top-bar">
+  <div class="container">
+    <div class="clearfix">
+      <ul class="top-bar-text float_left">
+        <li><i class="icon-technology-1"></i>{dede:global.moke_phone/}</li>
+        <li><i class="icon-note"></i>{dede:global.moke_email/}</li>
+        <li><i class="icon-world"></i>{dede:global.moke_adress/}</li>
+      </ul>
+      <ul class="social float_right">
+        <li><a href="#"><i class="fa fa-weixin"></i></a></li>
+        <li><a href="#"><i class="fa fa-weibo"></i></a></li>
+        <li><a href="#"><i class="fa fa-qq"></i></a></li>
+        <li><a href="#"><i class="fa fa-renren"></i></a></li>
+        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<section class="theme_menu stricky">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="main-logo"> <a href="/"><img src="/skin/images/logo/logo.png" alt="{dede:global.cfg_webname/}"></a> </div>
+      </div>
+      <div class="col-md-9 menu-column">
+        <nav class="menuzord" id="main_menu">
+          <ul class="menuzord-menu">
+            <li><a href="/">网站首页</a></li>
+            {dede:channel type='top' currentstyle="
+            <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+            "}
+            <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+            {/dede:channel}
+            <!-- <li><a href="http://www.baidu.com/" target="_blank">百度</a></li> -->
+          </ul>
+          <!-- End of .menuzord-menu --> 
+        </nav>
+        <!-- End of #main_menu --> 
+      </div>
+       <div class="right-column"> 
+         <div class="right-area"> 
+           <div class="link_btn float_right"> {dede:type typeid='12'} <a href="[field:typelink/]" class="thm-btn">在线咨询</a>{/dede:type} </div> 
+         </div> 
+       </div> 
+    </div>
+  </div>
+  <!-- End of .conatiner --> 
+</section>
+
+  <script type="text/javascript">
+
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>
+
